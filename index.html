@@ -217,13 +217,13 @@
       <span><i class="sw" style="background:var(--d2)"></i> Fri–Sat</span>
       <span><i class="sw" style="background:var(--d3)"></i> Sunday</span>
     </div>
-    Source: Austin (Rev 2.0), "Dosing w Twice Test" tab. pH 7.4 = no dosing. Morning is SC OFF at all readings; Sunday FC 0 follows the lowest band (2.2kg). Confirm values against your master sheet before printing.
+    Source: Austin (Rev 2.0), "Dosing w Twice Test" tab. pH 7.4 = no dosing. Morning is SC OFF at all readings. Sunday steps down from 2.8kg (FC 0) to 800g (FC 3.0). Confirm values against your master sheet before printing.
   </footer>
 </div>
 
 <script>
   const after = [
-    ["0","600g","1kg","2.2kg"],["0.5","600g","1kg","2.2kg"],
+    ["0","600g","1kg","2.8kg"],["0.5","600g","1kg","2.5kg"],
     ["1","500g","800g","2.2kg"],["1.5","500g","600g","1.8kg"],["2","500g","600g","1.4kg"],
     ["2.5","250g","400g","1.4kg"],["3","SC OFF","300g","800g"]
   ];
@@ -231,7 +231,7 @@
     ["0","SC OFF"],["0.5","SC OFF"],["1","SC OFF"],["1.5","SC OFF"],
     ["2","SC OFF"],["2.5","SC OFF"],["3","SC OFF"]
   ];
-  const ph = [["7.6","1kg"],["7.8","2kg"],["8.2","3kg"]];
+  const ph = [["7.6","1kg"],["7.8","2kg"],["8.0","3kg"]];
 
   function fmt(v){
     if(/^\d.*(kg|g)$/.test(v)) return `<span class="dose">${v}</span>`;
